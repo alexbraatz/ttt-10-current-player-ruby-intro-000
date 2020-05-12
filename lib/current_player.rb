@@ -2,12 +2,12 @@ board = [" "," "," "," "," "," "," "," "," ",]
 
 
 def turn_count(board)
-count = 0
-while count <= board.length
-count += 1
+counter = 0
+board.each do |space|
+  if space == "X" || space == "O"
+    counter += 1
+  end
 end
-end
-
 
 def current_player
 end
